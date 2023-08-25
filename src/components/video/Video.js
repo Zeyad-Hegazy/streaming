@@ -1,5 +1,5 @@
-import Control from "./Control";
 import ReactPlayer from "react-player";
+import VideoInfo from "./VideoInfo";
 import "../../css/Video.css";
 
 const Video = () => {
@@ -7,10 +7,12 @@ const Video = () => {
 		<div className="video_contanier">
 			<ReactPlayer
 				url={"https://youtu.be/NtfbWkxJTHw?si=vWnGCW-zz7s-xqKr"}
-				playing={true}
+				width="100%"
+				height="500px"
 				controls={true}
-				pip={true}
+				muted={true}
 			/>
+			<VideoInfo />
 		</div>
 	);
 };
