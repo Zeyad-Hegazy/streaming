@@ -3,7 +3,7 @@
 }
 
 .navbar_link {
-	color: #ffffff;
+	color: #ffffff !important	;
 }
 
 .navbar_link:hover {

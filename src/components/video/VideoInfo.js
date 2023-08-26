@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { MDBIcon } from "mdb-react-ui-kit";
+import Comment from "./Comment";
 
 import "../../css/VideoInfo.css";
 
@@ -9,7 +10,7 @@ const VideoInfo = () => {
 		<Container>
 			<Row className="pt-4 pb-4 align-items-baseline">
 				<Col sm={6} md={10}>
-					<h3>Video Title</h3>
+					<h3>How to Learn to Code - 8 Hard Truths</h3>
 				</Col>
 				<Col sm={1}>
 					<div className="like_circel">
@@ -20,6 +21,15 @@ const VideoInfo = () => {
 					<div className="like_circel">
 						<MDBIcon far icon="thumbs-down" size="2x" />
 					</div>
+				</Col>
+			</Row>
+			<Row>
+				<Col sm={12}>
+					<p className="videoInfo__description">
+						Learning to code can open many doors in life, but it's NOT easy and
+						NOT for everybody. Let's take a look at 8 different techniques
+						supported by science that can help you become a programmer faster
+					</p>
 				</Col>
 			</Row>
 			<Row className="align-items-baseline">
@@ -37,6 +47,7 @@ const VideoInfo = () => {
 					</form>
 				</Col>
 			</Row>
+			<Comment />
 		</Container>
 	);
 };

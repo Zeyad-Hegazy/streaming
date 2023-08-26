@@ -2,14 +2,13 @@
 	background-color: #8d8d8d18;
 	padding: 12px;
 	border-radius: 5px;
-	height: auto;
+	width: 100%;
 	cursor: pointer;
 }
 
 .thumbnail_img {
 	height: auto;
-	/* width: 200px;
-	height: 150px; */
+	width: auto;
 }
 
 .thumbnail_img img {
@@ -19,8 +18,9 @@
 .thumbnail_info {
 	width: 100%;
 }
-.thumbnail_info h3 {
+.thumbnail_info h5 {
 	width: 100%;
+	font-size: 15px;
 }
 
 .thumbnail_info p {

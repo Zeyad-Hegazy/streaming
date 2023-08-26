@@ -3,22 +3,19 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import "../../css/Thumbnail.css";
 
-const Thumbnail = () => {
+const Thumbnail = ({ title, description, imgThumbnail }) => {
 	return (
-		<Container className="thumbnail_contanier">
+		<Container fluid className="thumbnail_contanier">
 			<Row className="align-items-center">
-				<Col sm={7}>
+				<Col sm={5}>
 					<div className="thumbnail_img">
-						<img src="https://fakeimg.pl/250x150" alt="imaeUrl" />
+						<img src={imgThumbnail} alt={title} />
 					</div>
 				</Col>
-				<Col sm={5}>
+				<Col sm={7}>
 					<div className="thumbnail_info">
-						<h3>Video Title</h3>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-							quae
-						</p>
+						<h5>{title}</h5>
+						<p>{description}</p>
 					</div>
 				</Col>
 			</Row>

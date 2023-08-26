@@ -1,8 +1,10 @@
 import ReactPlayer from "react-player";
 import VideoInfo from "./VideoInfo";
+import { useParams } from "react-router-dom";
 import "../../css/Video.css";
 
 const Video = () => {
+	let { videoID } = useParams();
 	return (
 		<div className="video_contanier">
 			<ReactPlayer

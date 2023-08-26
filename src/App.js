@@ -1,4 +1,5 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Video from "./components/video/Video";
 import SubVideos from "./components/subvideo/SubVideos";
 import NavBar from "./components/outline/NavBar";
@@ -15,7 +16,9 @@ const App = () => {
 			<Container className="main__content">
 				<Row className="g-5">
 					<Col sm={12} md={8}>
-						<Video />
+						<Routes>
+							<Route path="/:videoId" element={<Video />} />
+						</Routes>
 					</Col>
 					<Col>
 						<SubVideos />
