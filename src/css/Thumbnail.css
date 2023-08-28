@@ -20,7 +20,8 @@
 }
 .thumbnail_info h5 {
 	width: 100%;
-	font-size: 15px;
+	font-size: 18px;
+	font-weight: 600;
 }
 
 .thumbnail_info p {

@@ -19,4 +19,24 @@ export const VIDEOS = [
 			],
 		},
 	},
+
+	{
+		id: 2,
+		img_thumbanil: "https://i.ytimg.com/vi/FM3jv3U9Nh8/maxresdefault.jpg",
+		title: "كيف تصمم بيئة النجاح؟",
+		description: "كيف تصمم بيئة الجاح",
+		VIDEO: {
+			vidoUrl: "https://youtu.be/FM3jv3U9Nh8?si=qtqEKAJm_O1kyhoF",
+			likes: 0,
+			dislikes: 0,
+			comments: [
+				{
+					comment_creator: "RoundSkills",
+					data: new Date(),
+					comment:
+						"هذه الشخص اسطورة في الإقنااااع والذكاء والكاريزما وتبسيط المعلومات وجعلها اكثر من سلسلة وشيقة تبارك الله، هذه هي الشخصيات التي لا نمل منها ابدًا🖤.",
+				},
+			],
+		},
+	},
 ];

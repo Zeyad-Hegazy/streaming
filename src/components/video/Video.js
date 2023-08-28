@@ -2,19 +2,22 @@ import ReactPlayer from "react-player";
 import VideoInfo from "./VideoInfo";
 import { useParams } from "react-router-dom";
 import "../../css/Video.css";
+import { VIDEOS } from "../../data/videos";
 
 const Video = () => {
-	let { videoID } = useParams();
+	let { videoId } = useParams();
+	const video = VIDEOS.find((v) => v.id === +videoId);
+
 	return (
 		<div className="video_contanier">
 			<ReactPlayer
-				url={"https://youtu.be/NtfbWkxJTHw?si=vWnGCW-zz7s-xqKr"}
+				url={video.VIDEO.vidoUrl}
 				width="100%"
 				height="500px"
 				controls={true}
 				muted={true}
 			/>
-			<VideoInfo />
+			<VideoInfo video={video} />
 		</div>
 	);
 };

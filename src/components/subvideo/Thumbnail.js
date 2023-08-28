@@ -15,7 +15,6 @@ const Thumbnail = ({ title, description, imgThumbnail }) => {
 				<Col sm={7}>
 					<div className="thumbnail_info">
 						<h5>{title}</h5>
-						<p>{description}</p>
 					</div>
 				</Col>
 			</Row>
