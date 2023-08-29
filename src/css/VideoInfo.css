@@ -8,7 +8,6 @@
 	align-items: center;
 	cursor: pointer;
 }
-
 .form {
 	width: 100%;
 	margin-bottom: 20px;
@@ -31,9 +30,14 @@
 	padding: 0 0 5px 20px;
 }
 .send_comment {
-	border-bottom: 2px solid #ffff;
+	border-bottom: 2px solid #ffff !important;
 	padding-bottom: 10px;
 	cursor: pointer;
+	border-radius: 0 !important;
+}
+
+.send_comment:hover {
+	border-bottom: green;
 }
 
 .videoInfo__description {

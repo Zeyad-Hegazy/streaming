@@ -15,12 +15,12 @@ const App = () => {
 			</Row>
 			<Container className="main__content">
 				<Row className="g-5">
-					<Col sm={12} md={8}>
+					<Col sm={12} md={12} xl={8}>
 						<Routes>
 							<Route path="/:videoId" element={<Video />} />
 						</Routes>
 					</Col>
-					<Col>
+					<Col sm={12} md={6} xl={4}>
 						<SubVideos />
 					</Col>
 				</Row>

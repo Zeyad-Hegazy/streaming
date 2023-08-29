@@ -15,7 +15,11 @@ const videoSlice = createSlice({
 			state.find((v) => v.id === action.payload).VIDEO.dislikes += 1;
 		},
 		commentHandler(state, action) {
-			state.VIDEO.comments.push(action.payload);
+			console.log(action.payload.id);
+			state
+				.find((v) => v.id === action.payload.id)
+				.VIDEO.comments.push(action.payload);
+			console.log(state[0]);
 		},
 		addVideoHandler() {},
 	},
