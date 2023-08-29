@@ -1,0 +1,8 @@
+.video_contanier div {
+	height: 500px !important;
+}
+@media screen and (max-width: 450px) {
+	.video_contanier div {
+		height: 300px !important;
+	}
+}

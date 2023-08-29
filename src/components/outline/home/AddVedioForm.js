@@ -28,7 +28,11 @@ const AddVedioForm = () => {
 			},
 		};
 		dispatch(videoActions.addVideoHandler(videoObj));
-		console.log(videoState);
+
+		titleRef.current.value = "";
+		urlRef.current.value = "";
+		descriptionRef.current.value = "";
+		thumbnailRef.current.value = "";
 	};
 
 	return (

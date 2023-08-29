@@ -8,6 +8,7 @@ const SubVideos = () => {
 	const videoState = useSelector((state) => state);
 	return (
 		<Container>
+			<h3>Watch List</h3>
 			{videoState.map((video) => (
 				<Row className="mb-4" key={video.id}>
 					<Col sm={12}>

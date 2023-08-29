@@ -16,11 +16,11 @@ const VideoInfo = ({ video }) => {
 	});
 
 	const hadleLikeClick = () => {
-		dispatch(videoActions.likeHandler(video.id));
+		dispatch(videoActions.likeHandler(videoState.id));
 	};
 
 	const handleDislikeClick = () => {
-		dispatch(videoActions.disLikeHandler(video.id));
+		dispatch(videoActions.disLikeHandler(videoState.id));
 	};
 
 	return (
@@ -30,13 +30,13 @@ const VideoInfo = ({ video }) => {
 					<h3>{video.title}</h3>
 				</Col>
 				<Col className="d-flex justify-content-between" sm={6} md={2}>
-					<Col sm={3} md={1}>
+					<Col sm={3} md={5}>
 						<div className="like_circel" onClick={hadleLikeClick}>
 							{videoState.VIDEO.likes}
 							<MDBIcon far icon="thumbs-up" size="2x" />
 						</div>
 					</Col>
-					<Col sm={3} md={1}>
+					<Col sm={3} md={5}>
 						<div className="like_circel" onClick={handleDislikeClick}>
 							{videoState.VIDEO.dislikes}
 							<MDBIcon far icon="thumbs-down" size="2x" />

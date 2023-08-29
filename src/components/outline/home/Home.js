@@ -9,7 +9,7 @@ const Home = () => {
 		<Container>
 			<Row>
 				<Col sm={12} className="header_title">
-					<h1>Add and Watch variooty of videos here</h1>
+					<h1>Add and Watch variety of videos here</h1>
 				</Col>
 			</Row>
 			<Row>

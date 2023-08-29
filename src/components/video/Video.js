@@ -1,23 +1,30 @@
 import ReactPlayer from "react-player";
 import VideoInfo from "./VideoInfo";
 import { useParams } from "react-router-dom";
-import { VIDEOS } from "../../data/videos";
+import { useSelector } from "react-redux";
+import "../../css/Video.css";
 
 const Video = () => {
 	let { videoId } = useParams();
-	const video = VIDEOS.find((v) => v.id === +videoId);
+
+	const videoState = useSelector((state) => state);
+	const video = videoState.find((v) => v.id === +videoId);
 
 	return (
-		<div className="video_contanier">
-			<ReactPlayer
-				url={video.VIDEO.vidoUrl}
-				width="100%"
-				height="500px"
-				controls={true}
-				muted={true}
-			/>
+		<>
+			<div className="video_contanier">
+				<div>
+					<ReactPlayer
+						url={video.VIDEO.vidoUrl}
+						width="100%"
+						height="100%"
+						controls={true}
+						muted={true}
+					/>
+				</div>
+			</div>
 			<VideoInfo video={video} />
-		</div>
+		</>
 	);
 };
 

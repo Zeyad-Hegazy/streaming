@@ -1,3 +1,4 @@
+import moment from "moment";
 export const VIDEOS = [
 	{
 		id: 1,
@@ -12,7 +13,7 @@ export const VIDEOS = [
 			comments: [
 				{
 					comment_creator: "RoundSkills",
-					data: new Date(),
+					data: moment(new Date()).format(),
 					comment:
 						"I can't get enough of your videos. Hope you stay healthy in these difficult times. 👍🏼👍🏼👍🏼",
 				},
@@ -32,7 +33,7 @@ export const VIDEOS = [
 			comments: [
 				{
 					comment_creator: "RoundSkills",
-					data: new Date(),
+					data: moment(new Date()).format(),
 					comment:
 						"هذه الشخص اسطورة في الإقنااااع والذكاء والكاريزما وتبسيط المعلومات وجعلها اكثر من سلسلة وشيقة تبارك الله، هذه هي الشخصيات التي لا نمل منها ابدًا🖤.",
 				},
