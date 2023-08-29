@@ -1,7 +1,6 @@
 import ReactPlayer from "react-player";
 import VideoInfo from "./VideoInfo";
 import { useParams } from "react-router-dom";
-import "../../css/Video.css";
 import { VIDEOS } from "../../data/videos";
 
 const Video = () => {

@@ -4,6 +4,8 @@ import { Row, Col } from "react-bootstrap";
 import { useSelector, useDispatch } from "react-redux";
 import { videoActions } from "../../../store";
 
+import "../../../css/CommentSection.css";
+
 import { MDBIcon } from "mdb-react-ui-kit";
 import Comment from "./Comment";
 

@@ -5,24 +5,20 @@ import Navbar from "react-bootstrap/Navbar";
 import { Form, Row, Col } from "react-bootstrap";
 
 import "../../css/NavBar.css";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
 	return (
 		<Navbar collapseOnSelect expand="lg" className="navbar_bg">
 			<Container>
 				<Navbar.Brand href="#home" className="navbar_link">
-					Home
+					<NavLink to={"/"} className="navbar_link">
+						Home
+					</NavLink>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
-					<Nav className="me-auto">
-						<Nav.Link className="navbar_link" href="#features">
-							Features
-						</Nav.Link>
-						<Nav.Link className="navbar_link" href="#pricing">
-							Pricing
-						</Nav.Link>
-					</Nav>
+					<Nav className="me-auto"></Nav>
 					<Form>
 						<Row>
 							<Col xs="12">

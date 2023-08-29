@@ -1,7 +1,9 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import Home from "./components/outline/home/Home";
 import Video from "./components/video/Video";
 import SubVideos from "./components/subvideo/SubVideos";
+
 import NavBar from "./components/outline/NavBar";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -17,6 +19,7 @@ const App = () => {
 				<Row className="g-5">
 					<Col sm={12} md={12} xl={8}>
 						<Routes>
+							<Route path="/" element={<Home />} />
 							<Route path="/:videoId" element={<Video />} />
 						</Routes>
 					</Col>

@@ -21,7 +21,9 @@ const videoSlice = createSlice({
 				.VIDEO.comments.push(action.payload);
 			console.log(state[0]);
 		},
-		addVideoHandler() {},
+		addVideoHandler(state, action) {
+			state.push(action.payload);
+		},
 	},
 });
 

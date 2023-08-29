@@ -1,0 +1,13 @@
+.header_title h1 {
+	font-size: 70px;
+}
+
+.btnAdding {
+	font-weight: bold;
+}
+
+@media screen and (max-width: 450px) {
+	.header_title h1 {
+		font-size: 30px;
+	}
+}
